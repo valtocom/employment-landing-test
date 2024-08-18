@@ -1,0 +1,129 @@
+.header {
+    height: 22vh;
+    background-color: var(--main-text-color);
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+    gap: 10%;
+}
+
+.header__title {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.header__image {
+    width: min(30%, 200px);
+}
+
+.main {
+    padding: 5vw 10vw;
+    display: flex;
+    flex-direction: column;
+    gap: 10vw;
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+    gap: 3vw;
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+    gap: 2vw;
+}
+
+.description {
+    border: 1px solid var(--main-text-color);
+    border-radius: 2vw;
+    padding: 2vw 5vw;
+}
+
+.highlights__description {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.description-title {
+    font-size: clamp(12px, 2vw, 3rem);
+    color: var(--accent-color);
+}
+
+.description-image {
+    width: min(30%, 400px);
+}
+
+.instructions__list {
+    padding-left: 3.3vw;
+}
+
+.instructions__list-item {
+    position: relative;
+}
+
+.instructions__list-item::before {
+    content: "";
+    width: 3vw;
+    height: 3vw;
+    background-image: url(../svg/marker.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    left: -5%;
+    top: 5%;
+}
+
+.tricks-title {
+    font-size: clamp(12px, 2vw, 3rem);
+    color: var(--main-text-color);
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    padding: 5vw 10vw;
+}
+
+.footer__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.footer__text {
+    font-size: clamp(16px, 3vw, 4rem);
+    color: var(--main-text-color);
+}
+
+.footer__image-link {
+    display: block;
+    width: min(50%, 400px);
+    transition: transform 0.5s 0.2s;
+}
+
+.footer__image-link:hover {
+    transform: scale(1.1) rotate(5deg);
+}
+
+.footer__image {
+    width: 100%;
+}
+
+.footer__feedback {
+    font-size: clamp(8px, 1.5vw, 3rem);
+    font-weight: 700;
+    color: var(--accent-color);
+}
+
+.footer__email {
+    font-size: clamp(8px, 1.5vw, 3rem);
+    font-weight: 400;
+    color: var(--accent-color);
+}
